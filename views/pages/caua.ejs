@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+  <header>
+    <%- include('../partials/header'); %>
+      <% if(req.session.loggedin) { %>
+        <%- include('../partials/menu_dashboard'); %>
+          <% } %>
+  </header>
+
+  <main>
+    <div class="jumbotron">
+      <h1>palmeiras</p>
+      <!-- <div class="d-flex flex-nowrap bd-highlight"> -->
+      <%- include('../partials/flex-images-wrap'); %>
+    </div>
+  </main>
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
+</body>
+
+</html>
